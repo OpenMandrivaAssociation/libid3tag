@@ -15,6 +15,7 @@ Source1:	id3tag.pc.bz2
 License:	GPLv2+
 Group:		Sound
 URL:		http://www.underbit.com/products/mad/
+BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	zlib-devel
 
 %description
