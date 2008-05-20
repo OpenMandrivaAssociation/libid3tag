@@ -1,6 +1,6 @@
 %define name 	libid3tag
 %define version 0.15.1b
-%define release %mkrel 6
+%define release %mkrel 7
 %define major  	0
 %define libname %mklibname id3tag %{major}
 %define develname %mklibname -d id3tag
@@ -12,6 +12,7 @@ Release:	%{release}
 
 Source0:	http://prdownloads.sourceforge.net/mad/%{name}-%{version}.tar.bz2
 Source1:	id3tag.pc.bz2
+Patch0:		libid3tag-0.15.1b-gentoo-CVE-2008-2109_fix_overflow.patch
 License:	GPLv2+
 Group:		Sound
 URL:		http://www.underbit.com/products/mad/
@@ -50,6 +51,7 @@ you should install this.
 
 %prep
 %setup -q
+%patch0 -p0 -b .cve-2008-2109
 
 %build
 %define __libtoolize true
