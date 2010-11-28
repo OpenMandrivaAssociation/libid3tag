@@ -1,6 +1,6 @@
 %define name 	libid3tag
 %define version 0.15.1b
-%define release %mkrel 10
+%define release %mkrel 11
 %define major  	0
 %define libname %mklibname id3tag %{major}
 %define develname %mklibname -d id3tag
