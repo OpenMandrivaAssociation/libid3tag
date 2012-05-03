@@ -63,20 +63,11 @@ rm -rf %buildroot
 %makeinstall
 # this is an invalid locale dir
 rm -rf %buildroot/%{_datadir}/locale/en
-%find_lang %{name}
 mkdir -p %buildroot/%_libdir/pkgconfig
 bzcat %SOURCE1 | sed -e 's,/lib\>,/%{_lib},;s,0.14.2b,%{version},' >%buildroot/%_libdir/pkgconfig/id3tag.pc
 
 %clean
 rm -fr %buildroot
-
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
- 
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
 
 %files -n %{libname}
 %defattr(-,root,root,-)
@@ -86,7 +77,6 @@ rm -fr %buildroot
 %files -n %develname
 %defattr(-,root,root)
 %doc COPY* README TODO CHANGES CREDITS
-%{_libdir}/*.la
 %{_libdir}/*.a
 %{_libdir}/*.so
 %_libdir/pkgconfig/*
