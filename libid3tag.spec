@@ -2,6 +2,8 @@
 %define libname %mklibname id3tag %{major}
 %define devname %mklibname -d id3tag
 
+%define _disable_rebuild_configure 1
+
 Summary:	Library for reading and writing ID3v1 and ID3v2 tags
 Name:		libid3tag
 Version:	0.15.1b
