@@ -5,7 +5,7 @@
 Summary:	Library for reading and writing ID3v1 and ID3v2 tags
 Name:		libid3tag
 Version:	0.16.2
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Sound
 Url:		https://github.com/tenacityteam/libid3tag
