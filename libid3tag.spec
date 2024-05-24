@@ -61,7 +61,7 @@ you should install this.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -n %{name} -p1
 
 %build
 %cmake -G Ninja
