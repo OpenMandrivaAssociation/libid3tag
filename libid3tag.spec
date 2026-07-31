@@ -5,7 +5,7 @@
 
 Summary:	Library for reading and writing ID3v1 and ID3v2 tags
 Name:		libid3tag
-Version:	0.16.3
+Version:	0.16.4
 Release:	1
 License:	GPLv2+
 Group:		Sound
@@ -61,7 +61,7 @@ you should install this.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -n %{name} -p1
+%autosetup -n libid3tag -p1
 
 %build
 %cmake -G Ninja
