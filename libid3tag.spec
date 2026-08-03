@@ -52,7 +52,7 @@ If you are going to develop programs which will use the %{name} library
 you should install this.
 
 %files -n %{devname}
-%doc COPY* README TODO CHANGES CREDITS
+%doc COPY* CHANGES CREDITS
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
