@@ -13,6 +13,7 @@ Url:		https://github.com/tenacityteam/libid3tag
 Source0:	https://codeberg.org/tenacityteam/libid3tag/archive/%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:	ninja
+BuildRequires:  gperf
 BuildRequires:	pkgconfig(zlib)
 
 %description
